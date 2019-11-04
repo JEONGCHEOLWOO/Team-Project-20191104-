@@ -1,33 +1,17 @@
-
+import java.awt.*;
+import javax.swing.*;
+import java.awt.event.*;
 /**
  * Write a description of class MyMouseListener here.
  *
  * @author (2018315031 박성현, 2018315040 김선민, 2018315034 정철우)
  * @version (2019/11/04)
  */
-public class MyMouseListener
+public class MyMouseListener implements MouseListener
 {
-    // instance variables - replace the example below with your own
-    private int x;
-
-    /**
-     * Constructor for objects of class MyMouseListener
-     */
-    public MyMouseListener()
-    {
-        // initialise instance variables
-        x = 0;
-    }
-
-    /**
-     * An example of a method - replace this comment with your own
-     *
-     * @param  y  a sample parameter for a method
-     * @return    the sum of x and y
-     */
-    public int sampleMethod(int y)
-    {
-        // put your code here
-        return x + y;
-    }
+    public void MouseClicked(MouseEvent e){}
+    public void MouseEntered(MouseEvent e){}
+    public void MouseExited(MouseEvent e){}
+    public void MousePressed(MouseEvent e){}
+    public void MouseReleased(MouseEvent e){}
 }
