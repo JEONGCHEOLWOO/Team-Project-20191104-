@@ -2,7 +2,7 @@
 /**
  * Write a description of class MyApp here.
  *
- * @author (your name)
+ * @author (2018315031)
  * @version (a version number or a date)
  */
 public class MyApp
