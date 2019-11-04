@@ -3,7 +3,7 @@
  * Write a description of class MyApp here.
  *
  * @author (2018315031)
- * @version (a version number or a date)
+ * @version (2019/11/04)
  */
 public class MyApp
 {
