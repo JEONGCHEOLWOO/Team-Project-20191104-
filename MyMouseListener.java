@@ -7,11 +7,31 @@ import java.awt.*;
  * @author (2018315031 박성현, 2018315040 김선민, 2018315034 정철우)
  * @version (2019/11/04)
  */
-public class MyMouseListener implements MouseListener
+public class MyMouseListener extends MouseAdapter implements MouseListener
 {
-    public void MouseClicked(MouseEvent e){}
-    public void MouseEntered(MouseEvent e){}
-    public void MouseExited(MouseEvent e){}
-    public void MousePressed(MouseEvent e){}
-    public void MouseReleased(MouseEvent e){}
+    JPanel jp;
+    JLabel jl;
+    public MyMouseListener(JLabel jl, JPanel jp){
+        this.jp = jp;
+        this.jl = jl;
+    }
+    public void mouseClicked(MouseEvent e){}
+    public void mouseEntered(MouseEvent e){
+        jp.setBackground(Color.CYAN);
+    }
+    public void mouseExited(MouseEvent e){
+        jp.setBackground(Color.YELLOW);
+    }
+    public void mousePressed(MouseEvent e){
+        jl.setText("MousePressed (" + e.getX() + "," + e.getY() + ")");
+    }
+    public void mouseReleased(MouseEvent e){
+        jl.setText("MouseReleased (" + e.getX() + "," + e.getY() + ")");
+    }
+    public void mouseDragged(MouseEvent e){
+        jl.setText("MouseDragged (" + e.getX() + "," + e.getY() + ")");
+    }
+    public void mouseMoved(MouseEvent e){
+        jl.setText("MouseMoved (" + e.getX() + "," + e.getY() + ")");
+    }
 }

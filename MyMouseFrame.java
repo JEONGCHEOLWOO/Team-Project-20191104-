@@ -9,7 +9,7 @@ import javax.swing.*;
  */
 public class MyMouseFrame extends JFrame
 {
-    public JPanel mp;
+    public JPanel jp;
     private JLabel jl = new JLabel("No Mouse Event");
 
     public MyMouseFrame(){
@@ -17,7 +17,15 @@ public class MyMouseFrame extends JFrame
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.setSize(300, 400);
         
-        mp = new
+        JPanel jp = new JPanel();
+        
+        MyMouseListener ml = new MyMouseListener(jl,jp);
+        jp.addMouseListener(ml);
+        jp.addMouseMotionListener(ml);
+        
+        jp.add(jl);
+        jl.setSize(300,200);
+        jl.setVisible(true);
     }
 
 }
