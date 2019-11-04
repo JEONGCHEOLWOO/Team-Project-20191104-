@@ -2,8 +2,8 @@
 /**
  * Write a description of class MyMouseListener here.
  *
- * @author (your name)
- * @version (a version number or a date)
+ * @author (2018315031 박성현, 2018315040 김선민, 2018315034 정철우)
+ * @version (2019/11/04)
  */
 public class MyMouseListener
 {
