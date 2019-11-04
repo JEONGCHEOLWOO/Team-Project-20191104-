@@ -1,6 +1,6 @@
-import java.awt.*;
 import javax.swing.*;
 import java.awt.event.*;
+import java.awt.*;
 /**
  * Write a description of class MyMouseListener here.
  *
