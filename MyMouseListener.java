@@ -17,9 +17,11 @@ public class MyMouseListener extends MouseAdapter implements MouseListener
     }
     public void mouseClicked(MouseEvent e){}
     public void mouseEntered(MouseEvent e){
+        JPanel jp = (JPanel)e.getSource();
         jp.setBackground(Color.CYAN);
     }
     public void mouseExited(MouseEvent e){
+        JPanel jp = (JPanel)e.getSource();
         jp.setBackground(Color.YELLOW);
     }
     public void mousePressed(MouseEvent e){

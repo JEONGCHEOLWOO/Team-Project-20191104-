@@ -19,6 +19,7 @@ public class MyMouseFrame extends JFrame
         
         JPanel jp = new JPanel();
         
+        this.add(jp);
         MyMouseListener ml = new MyMouseListener(jl,jp);
         jp.addMouseListener(ml);
         jp.addMouseMotionListener(ml);
