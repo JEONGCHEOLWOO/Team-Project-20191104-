@@ -26,7 +26,7 @@ public class MyMouseFrame extends JFrame
         
         jp.add(jl);
         jl.setSize(300,200);
-        jl.setVisible(true);
+        this.setVisible(true);
     }
 
 }
